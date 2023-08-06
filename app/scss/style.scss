@@ -4,14 +4,16 @@
 @import 'libs';
 @import 'global';
 
-.header {
+.header { 
+    margin-bottom: 30px;
 
-    &__inner {
-        padding: 15px 50px; 
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; 
-        border: 2px solid #000; 
+    &__top {
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #000;
+        border-bottom: 1px solid #000;
         background-color: #B2EBF2;
 
         .menu {
@@ -67,22 +69,119 @@
             .menu__list {
                 display: flex;
 
-                .menu__item + .menu__item {
+                .menu__item+.menu__item {
                     margin-left: 20px;
 
-                } 
-                 
-                .menu__link{
-                    color: #000; 
-                    text-transform: uppercase; 
-                    @extend %montserrat-600; 
+                }
+
+                .menu__link {
+                    color: #000;
+                    text-transform: uppercase;
+                    @extend %montserrat-600;
                     font-size: 14px;
                 }
 
             }
         }
-    }
+    } 
+     
+   &__main{ 
+    display: flex; 
+    justify-content: space-between; 
+     
+   } 
+    
+   .discovery-call{
+    padding: 50px;
+    background-color: #B2EBF2;
+    max-width: 689px;
+    border: 2px solid #000;
+    border-top: 1px solid #000;  
+    border-right: 1px solid #000;
+     
+    &__title{ 
+        margin-bottom: 10px;
+    }  
+     
+   &__subtitle{  
+    max-width: 540px; 
+    margin-bottom: 20px;
+   } 
+    
+  &__form{  
+    border-radius: 20px; 
+    padding: 30px; 
+    border: 2px solid #222; 
+    background-color: #FFF; 
+    display: grid;   
+    grid-template-columns: repeat(2, 259px);  
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }  
+   
+  &__input{ 
+    border-radius: 6px; 
+    padding: 10px; 
+    @extend %montserrat-500; 
+    font-size: 14px;  
+    line-height: 130%; 
+    color: #222; 
+    border: 2px solid #222; 
+    max-width: 259px;
+  }
+   
+  &__input.discovery-call__input--email{ 
+    grid-column: 1 / -1; 
+    max-width: 529px;
+  } 
+   
+  &__btn{ 
+    grid-column: 1 / -1; 
+    border-radius: 6px;  
+    padding: 10px; 
+    text-align: center; 
+    @extend %montserrat-700; 
+    font-size: 16px; 
+    line-height: 130%; 
+    color:#fff; 
+    background-color:#0EAAA3; 
+    border: 1px solid transparent; 
+    cursor: pointer; 
+    max-width: 529px;
+  }
+
+}    
+
+
+   &__main-certificate{ 
+     border: 2px solid #000;    
+     border-top: 1px solid #000; 
+     border-left: 1px solid #000;
+     width: 100%;
+     max-width: 691px;
+   } 
+    
+   &__main-certificate-img{ 
+    margin: 76px 147px 89px 169px;
+   } 
+    
+   &__main-certificate-badge{  
+    display: block;
+    border: 2px solid #000;  
+    border-bottom: none; 
+    padding: 10px;  
+    margin: 0 auto;
+    font-size: 12px;  
+    text-transform: uppercase; 
+    @extend %montserrat-700;
+    border-radius: 10px 10px 0px 0px;  
+    max-width: 276px; 
+    background-color: #b2ebf2;
+   }
+     
 }
+
+
 
 
 

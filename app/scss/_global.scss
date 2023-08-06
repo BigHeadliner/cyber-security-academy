@@ -1,15 +1,23 @@
     
      
-     body { 
-        @extend %montserrat-700;
-        font-size: 22px;
-        line-height: 140%; 
-        color: #000;
-    } 
+ body { 
+    @extend %montserrat-700;
+    font-size: 22px;
+    line-height: 140%; 
+    color: #000;
+} 
    
    .container {
     max-width: 1410px;
     margin: 0 auto;
     padding: 0 15px; 
-    border: 1px solid green;
-} 
+    border: 1px solid green;  
+}  
+ 
+.title{ 
+    @extend %humane-700; 
+    font-size: 110px; 
+    line-height: 90%; 
+    color: #000; 
+    margin-bottom: 20px;
+}
