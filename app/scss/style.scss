@@ -4,7 +4,7 @@
 @import 'libs';
 @import 'global';
 
-.header { 
+.header {
     margin-bottom: 30px;
 
     &__top {
@@ -83,104 +83,169 @@
 
             }
         }
-    } 
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .discovery-call {
+        padding: 50px;
+        background-color: #B2EBF2;
+        max-width: 689px;
+        border: 2px solid #000;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+
+        &__title {
+            margin-bottom: 10px; 
+        }
+
+        &__subtitle {
+            max-width: 540px;
+            margin-bottom: 20px;
+        }
+
+        &__form {
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid #222;
+            background-color: #FFF;
+            display: grid;
+            grid-template-columns: repeat(2, 259px);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        &__input {
+            border-radius: 6px;
+            padding: 10px;
+            @extend %montserrat-500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #222;
+            border: 2px solid #222;
+            max-width: 259px;
+        }
+
+        &__input.discovery-call__input--email {
+            grid-column: 1 / -1;
+            max-width: 529px;
+        }
+
+        &__btn {
+            grid-column: 1 / -1;
+            border-radius: 6px;
+            padding: 10px;
+            text-align: center;
+            @extend %montserrat-700;
+            font-size: 16px;
+            line-height: 130%;
+            color: #fff;
+            background-color: #0EAAA3;
+            border: 1px solid transparent;
+            cursor: pointer;
+            max-width: 529px;
+        }
+
+    }
+
+
+    &__main-certificate {
+        border: 2px solid #000;
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        width: 100%;
+        max-width: 691px;
+    }
+
+    &__main-certificate-img {
+        margin: 76px 147px 89px 169px;
+    }
+
+    &__main-certificate-badge {
+        display: block;
+        border: 2px solid #000;
+        border-bottom: none;
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 12px;
+        text-transform: uppercase;
+        @extend %montserrat-700;
+        border-radius: 10px 10px 0px 0px;
+        max-width: 276px;
+        background-color: #b2ebf2;
+    }
+
+}
+ 
+.faq{ 
      
-   &__main{ 
+  &__top{ 
+    padding: 50px 50px 0px 50px; 
+    background-color: #b2ebf2;
     display: flex; 
-    justify-content: space-between; 
-     
-   } 
-    
-   .discovery-call{
-    padding: 50px;
-    background-color: #B2EBF2;
-    max-width: 689px;
-    border: 2px solid #000;
-    border-top: 1px solid #000;  
-    border-right: 1px solid #000;
-     
-    &__title{ 
-        margin-bottom: 10px;
-    }  
-     
-   &__subtitle{  
-    max-width: 540px; 
-    margin-bottom: 20px;
-   } 
-    
-  &__form{  
-    border-radius: 20px; 
-    padding: 30px; 
-    border: 2px solid #222; 
-    background-color: #FFF; 
-    display: grid;   
-    grid-template-columns: repeat(2, 259px);  
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-  }  
-   
-  &__input{ 
-    border-radius: 6px; 
-    padding: 10px; 
-    @extend %montserrat-500; 
-    font-size: 14px;  
-    line-height: 130%; 
-    color: #222; 
-    border: 2px solid #222; 
-    max-width: 259px;
-  }
-   
-  &__input.discovery-call__input--email{ 
-    grid-column: 1 / -1; 
-    max-width: 529px;
+    justify-content: space-between;
   } 
    
-  &__btn{ 
-    grid-column: 1 / -1; 
-    border-radius: 6px;  
-    padding: 10px; 
-    text-align: center; 
-    @extend %montserrat-700; 
-    font-size: 16px; 
+  &__title-box{  
+    width: 100%;
+    max-width: 577px; 
+  }   
+
+  &__text-box{ 
+    width: 100%;
+    max-width: 550px;
+  } 
+    
+  &__questions{ 
+    background-color: #b2ebf2; 
+    padding: 20px 50px 50px 50px;
+  } 
+
+  &__question{ 
+    padding: 20px; 
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    max-width: 1280px;  
+    background-color: #fff; 
+    margin: 0 auto 15px;
+  } 
+    
+  &__question-top{ 
+    display: flex; 
+    justify-content: space-between;  
+    align-items:center;
+    margin-bottom: 7px;
+  }  
+   
+  &__question-title{ 
+    line-height: 130%;
+  }  
+   
+  &__question-title-span{ 
+    @extend %montserrat-900;
+  } 
+   
+  &__question-text{ 
+    @extend %montserrat-400; 
+    font-size: 18px; 
     line-height: 130%; 
-    color:#fff; 
-    background-color:#0EAAA3; 
-    border: 1px solid transparent; 
-    cursor: pointer; 
-    max-width: 529px;
+    max-width: 660px;
   }
-
-}    
-
-
-   &__main-certificate{ 
-     border: 2px solid #000;    
-     border-top: 1px solid #000; 
-     border-left: 1px solid #000;
-     width: 100%;
-     max-width: 691px;
-   } 
-    
-   &__main-certificate-img{ 
-    margin: 76px 147px 89px 169px;
-   } 
-    
-   &__main-certificate-badge{  
-    display: block;
-    border: 2px solid #000;  
-    border-bottom: none; 
-    padding: 10px;  
-    margin: 0 auto;
-    font-size: 12px;  
-    text-transform: uppercase; 
-    @extend %montserrat-700;
-    border-radius: 10px 10px 0px 0px;  
-    max-width: 276px; 
-    background-color: #b2ebf2;
-   }
-     
+   
+  &__action-btn{ 
+    cursor: pointer;
+  } 
+   
+ &__action-btn.faq__action-btn--rotate{ 
+    transform: rotate(135deg); 
+    transition: all 0.3s linear;
+ }
+  
 }
-
 
 
 
