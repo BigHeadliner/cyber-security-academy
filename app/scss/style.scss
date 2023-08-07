@@ -100,7 +100,7 @@
         border-right: 1px solid #000;
 
         &__title {
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
         }
 
         &__subtitle {
@@ -180,131 +180,214 @@
     }
 
 }
- 
-.faq{  
-     
-    margin-bottom: 30px;
-     
-  &__top{ 
-    padding: 50px 50px 0px 50px; 
-    background-color: #b2ebf2;
-    display: flex; 
-    justify-content: space-between; 
-    border: 2px solid #000; 
-    border-bottom: none;
-  } 
-   
-  &__title-box{  
-    width: 100%;
-    max-width: 577px; 
-  }   
 
-  &__text-box{ 
-    width: 100%;
-    max-width: 550px;
-  } 
-    
-  &__questions{ 
-    background-color: #b2ebf2; 
-    padding: 20px 50px 50px 50px; 
-    border: 2px solid #000;  
-    border-top: none;
-  } 
+.faq {
 
-  &__question{ 
-    padding: 20px; 
-    border: 2px solid #000; 
-    border-radius: 20px; 
-    max-width: 1280px;  
-    background-color: #fff; 
-    margin: 0 auto 15px;
-  } 
-    
-  &__question-top{ 
-    display: flex; 
-    justify-content: space-between;  
-    align-items:center;
-    margin-bottom: 7px;
-  }  
-   
-  &__question-title{ 
-    line-height: 130%;
-  }  
-   
-  &__question-title-span{ 
-    @extend %montserrat-900;
-  } 
-   
-  &__question-text{ 
-    @extend %montserrat-400; 
-    font-size: 18px; 
-    line-height: 130%; 
-    max-width: 660px;
-  }
-   
-  &__action-btn{ 
-    cursor: pointer;
-  } 
-   
- &__action-btn.faq__action-btn--rotate{ 
-    transform: rotate(135deg); 
-    transition: all 0.3s linear;
- }
-  
-} 
- 
-.reasons{  
     margin-bottom: 30px;
-     
-    &__inner{ 
-        border: 2px solid #000;  
-        background-color: #b2ebf2; 
-        padding: 50px;
-    } 
-     
-    &__title{ 
+
+    &__top {
+        padding: 50px 50px 0px 50px;
+        background-color: #b2ebf2;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #000;
+        border-bottom: none;
+    }
+
+    &__title-box {
+        width: 100%;
+        max-width: 577px;
+    }
+
+    &__text-box {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    &__questions {
+        background-color: #b2ebf2;
+        padding: 20px 50px 50px 50px;
+        border: 2px solid #000;
+        border-top: none;
+    }
+
+    &__question {
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 20px;
+        max-width: 1280px;
+        background-color: #fff;
+        margin: 0 auto 15px;
+    }
+
+    &__question-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+
+    &__question-title {
+        line-height: 130%;
+    }
+
+    &__question-title-span {
+        @extend %montserrat-900;
+    }
+
+    &__question-text {
+        @extend %montserrat-400;
+        font-size: 18px;
+        line-height: 130%;
+        max-width: 660px;
+    }
+
+    &__action-btn {
+        cursor: pointer;
+    }
+
+    &__action-btn.faq__action-btn--rotate {
+        transform: rotate(135deg);
+        transition: all 0.3s linear;
+    }
+
+}
+
+.reasons{
+
+    &__inner {
+        border: 2px solid #000;
+        background-color: #b2ebf2;
+        padding: 50px; 
+        margin-bottom: 30px;
+    }
+
+    &__title {
         margin-bottom: 40px;
-    }  
-     
-    &__items{  
-        border: 1px solid green; 
-        max-width: 1280px; 
-        display: flex; 
+    }
+
+    &__items {
+        border: 1px solid transparent;
+        max-width: 1280px;
+        display: flex;
         justify-content: space-between;
     }
-     
-    &__item{ 
-      border: 2px solid #000;   
-      border-radius: 20px; 
-      background-color: #fff;  
-      width: 100%;
-      max-width: 414px; 
-      padding: 20px 20px 26px 20px;
-    } 
-     
-    &__item-img{ 
-      margin-bottom: 30px;
-    } 
-     
-    &__item-text{ 
-        @extend %montserrat-500;  
-        font-size: 22px; 
-        max-width: 250px; 
+
+    &__item {
+        border: 2px solid #000;
+        border-radius: 20px;
+        background-color: #fff;
+        width: 100%;
+        max-width: 414px;
+        padding: 20px 20px 26px 20px;
+    }
+
+    &__item-img {
+        margin-bottom: 30px;
+    }
+
+    &__item-text {
+        @extend %montserrat-500;
+        font-size: 22px;
+        max-width: 250px;
         line-height: 130%;
-    }  
-     
-   &__item-text.reasons__item-text--2, 
-   &__item-text.reasons__item-text--3{ 
-     max-width: 350px; 
-   }
-     
-    &__item-text-span{  
-       @extend %montserrat-900;
+    }
+
+    &__item-text.reasons__item-text--2,
+    &__item-text.reasons__item-text--3 {
+        max-width: 350px;
+    }
+
+    &__item-text-span {
+        @extend %montserrat-900;
     }
 }
 
 
+.choose-us {
 
+    &__inner {
+        padding: 50px;
+        background-color: #b2ebf2;
+        border: 2px solid #000; 
+        display: flex; 
+        justify-content: space-between;   
+        align-items: flex-end;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        padding-left: 20px;
+        width: 100%;
+        max-width: 590px;
+        border-left: 6px solid #000;
+    }
+
+    &__subtitle {
+        margin-bottom: 25px;
+    }  
+     
+    &__items{  
+        border: 1px solid transparent; 
+        display: flex;  
+        flex-wrap: wrap; 
+        max-width: 570px;
+    }
+     
+    &__item{ 
+        padding: 10px 23px; 
+        background-color: #FFF; 
+        border-radius: 140px; 
+        width:fit-content;  
+        border: 2px solid #000;  
+        box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.75); 
+        margin: 5px;
+    } 
+     
+    &__item-text{ 
+        @extend %montserrat-500; 
+        font-size: 16px; 
+        line-height: 140%;
+    } 
+     
+    &__founder{  
+        width: 100%;
+        max-width: 480px; 
+        height: 240px; 
+        border: 2px solid #000;   
+        background-color: #FFF;  
+        border-radius: 20px; 
+        padding: 15px; 
+        position: relative; 
+    }   
+     
+    &__founder-img{ 
+        position: absolute;
+        right: 25px;
+        bottom: 0;
+    }
+     
+    &__founder-badge{  
+        position: absolute; 
+        bottom:15px; 
+        left: 15px;       
+    }
+     
+   &__founder-name{ 
+     @extend %montserrat-900; 
+     font-size: 14px; 
+     line-height: 130%;
+   }  
+    
+   &__founder-position{ 
+     @extend %montserrat-500; 
+     font-size: 14px; 
+     line-height: 130%;
+   }
+}
 
 
 
