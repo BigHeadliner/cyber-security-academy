@@ -391,7 +391,8 @@
 } 
  
 
-.reviews{
+.reviews{ 
+    margin-bottom: 30px;
      
     &__inner{ 
         padding: 100px 50px 37px 50px;
@@ -482,10 +483,91 @@
     max-width: 327px; 
     line-height: 130%;
   }
+       
+} 
+ 
+.contacts {   
+     margin-bottom: 30px;
      
-     
-}
+    &__inner{  
+        display: flex; 
+        justify-content: space-between;
+    }
 
+    .discovery-call {
+        padding: 50px;
+        background-color: #B2EBF2;
+        max-width: 689px;
+        border: 2px solid #000;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            max-width: 540px;
+            margin-bottom: 20px;
+        } 
+         
+       &__subtitle.discovery-call__subtitle--contacts{ 
+          max-width: 400px;
+       }
+
+        &__form {
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid #222;
+            background-color: #FFF;
+            display: grid;
+            grid-template-columns: repeat(2, 259px);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        &__input {
+            border-radius: 6px;
+            padding: 10px;
+            @extend %montserrat-500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #222;
+            border: 2px solid #222;
+            max-width: 259px;
+        }
+
+        &__input.discovery-call__input--email {
+            grid-column: 1 / -1;
+            max-width: 529px;
+        }
+
+        &__btn {
+            grid-column: 1 / -1;
+            border-radius: 6px;
+            padding: 10px;
+            text-align: center;
+            @extend %montserrat-700;
+            font-size: 16px;
+            line-height: 130%;
+            color: #fff;
+            background-color: #0EAAA3;
+            border: 1px solid transparent;
+            cursor: pointer;
+            max-width: 529px;
+        }
+
+    }  
+     
+    .discovery-call.discovery-call--contacts{ 
+        padding: 45px 50px 38px; 
+    }
+     
+    &__picture{ 
+        border: 2px solid #000; 
+        border-left: 1px solid #000; 
+    }
+}
 
 
 
