@@ -1,0 +1,408 @@
+ 
+   
+@media(max-width: 1370px) {
+
+    // header  
+     
+    .header__main-certificate{ 
+        position:relative; 
+        display: flex; 
+        justify-content: center;  
+        align-items: center;
+    }
+
+     
+    .header__main-certificate-badge{ 
+        position: absolute; 
+        bottom:0; 
+        left: 30%;
+    }
+     
+     
+    .header__main-certificate-badge {
+        position: absolute;
+        bottom: 0;
+        left: 21%;
+    }  
+
+} 
+ 
+ @media(max-width: 1175px) {
+
+     // header      
+
+     .header__main {
+         flex-wrap: wrap;
+     } 
+      
+
+     .header .discovery-call  { 
+         max-width: 1175px; 
+         border: 2px solid #000; 
+         border-bottom: 1px solid #000; 
+         border-top: 1px solid #000;
+     } 
+      
+     .header .discovery-call__title{ 
+        margin: 34px 0px 40px 0;
+     } 
+      
+     .header .discovery-call__subtitle {
+        max-width: 719px;
+        margin-bottom: 34px;
+    } 
+     
+    .header .discovery-call__form { 
+        max-width: 589px; 
+        margin: 0 auto;
+    }   
+     
+    .header__main-certificate{ 
+        width: 100%; 
+        max-width: 1175px;  
+        border: 2px solid #000; 
+        border-top: 1px solid #000;
+    } 
+      
+    .header__main-certificate-badge{ 
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+  
+ } 
+  
+ @media(max-width: 930px) {  
+     
+    // header
+     
+    .header__top .menu .menu__list {
+        position: absolute;
+        left: 2%;
+        right: 2%; 
+        padding: 20px 0;
+        background-color: #000; 
+        color: #FFF;
+        display: block;
+        top: -3750px; 
+        transition: all .5s;
+        z-index: 5;
+    }  
+     
+
+   .header__top .menu__list.menu__list--active { 
+        top: 115px
+    } 
+     
+    .header__top .menu .menu__list .menu__item+.menu__item {
+        margin-left: 0;
+    }  
+
+    .header__top .menu .menu__list .menu__link{
+        padding: 15px 0;
+        display: block;
+        text-align: center;   
+        color: #FFF;
+    } 
+     
+    .header__top .menu .menu__btn { 
+        display: block;
+    }
+ } 
+  
+
+ @media(max-width: 730px) {    
+     
+    // header 
+      
+    .header .discovery-call__form {
+        max-width: 490px;
+        margin: 0 auto; 
+        grid-template-columns: repeat(2, 205px);
+    } 
+     
+    .header__top .menu__list.menu__list--active {
+        top: 97px; 
+    }
+
+ } 
+  
+ @media(max-width: 650px) {    
+     
+    // header   
+      
+    .header .discovery-call__form {
+        border-radius: 20px;
+        padding: 30px;
+        border: 2px solid #222;
+        background-color: #fff;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    } 
+     
+    .header .discovery-call__input{ 
+        grid-column: 1/-1; 
+        max-width: 529px;
+    }
+
+} 
+ 
+@media(max-width: 530px) {     
+
+    //  global
+     
+    .title {
+        font-size: 95px;
+        line-height: 97%;
+        color: #000;
+    } 
+} 
+ 
+@media(max-width: 470px) {      
+     
+     //  global
+     
+    .title {
+        font-size: 79px;
+    } 
+     
+    .header .discovery-call__title {
+        margin: 0px 0px 23px 0;
+    }
+
+}  
+ 
+@media(max-width: 450px) {      
+      
+    // header 
+
+    .header .discovery-call__form {
+        padding: 20px;
+        grid-gap: 10px; 
+        border-radius: 15px;
+    }  
+     
+    .header .discovery-call__input {
+        border-radius: 8px;   
+        padding: 15px;
+        height: 48px;
+    }
+     
+    .header .discovery-call__btn{ 
+        text-transform: uppercase; 
+        border-radius: 8px; 
+    } 
+     
+    .header__main-certificate-img {
+        margin: 31px 0 83px 0;
+        width: 254px; 
+        height: 359px;
+    }
+
+} 
+ 
+@media(max-width: 445px) { 
+   
+  // header  
+   
+  .header__top {
+    padding: 15px 20px; 
+   } 
+
+  .header .discovery-call {
+    padding: 30px 20px;  
+  }   
+   
+  .header__main-certificate-img {
+    margin: 31px 0 67px 0; 
+ }
+   
+  .header__main-certificate-badge{ 
+    width: 234px; 
+    height: 33px; 
+    font-size: 10px; 
+    text-transform: uppercase;  
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+   
+} 
+ 
+@media(max-width: 377px) {
+
+    // global 
+
+    .title {
+        font-size: 54px;
+    } 
+     
+    .header .discovery-call__title {
+        margin: 0px 0px 14px 0;
+    } 
+     
+    .discovery-call__subtitle{ 
+        font-size: 17px;
+    }
+
+} 
+ 
+@media(max-width: 345px) {   
+     
+    // header 
+     
+    .header__top {
+        padding: 15px 9px;
+    }
+     
+    .discovery-call__subtitle {
+        font-size: 15px; 
+    }  
+     
+    .header__top .menu__list.menu__list--active {
+        top: 95px;
+    }
+     
+
+} 
+ 
+@media(max-width: 330px) {   
+     
+    // header   
+      
+    .header__top{ 
+        padding: 10px 0 10px 15px;
+    }    
+     
+    .header__top .menu .menu__btn .row-top,   
+    .header__top .menu .menu__btn .row-middle,  
+    .header__top .menu .menu__btn .row-bottom {
+        width: 22px;
+        height: 2px;
+    } 
+     
+    .menu{ 
+        border: 1px solid transparent;  
+    } 
+      
+    .header__top .menu .menu__btn{ 
+        border: 1px solid transparent; 
+        width: 22px; 
+        height: 16px; 
+        margin-right: 24px;
+    }   
+     
+    .header__top .menu .menu__btn::before{ 
+       content: ''; 
+       height: 70px; 
+       width: 2px; 
+       background-color: #000;  
+       position: absolute; 
+       top: -28px;  
+       right: 44px;
+    }  
+     
+    .header__top .menu .menu__btn .row-middle {
+        transform: translateY(6px);
+    } 
+     
+    .header__top .menu .menu__btn .row-bottom {
+        transform: translateY(12px);
+    }
+      
+    .logo__img{ 
+            width: 137px;
+            height: 47px;
+    } 
+      
+    .header__top .menu .menu__btn--open .row-bottom {
+        transform: rotate(-44deg) translateY(3px) translateX(-6px);
+    } 
+     
+    .header__top .menu .menu__btn--open .row-top {
+        transform: rotate(45deg) translateY(6px) translateX(3px);
+    }  
+     
+    .header .discovery-call {
+        padding: 30px 15px 31px 15px;
+    } 
+     
+    .title {
+        font-size: 58px;
+    } 
+       
+    .header .discovery-call__title {
+        margin: 0px 0px 5px 0;
+    } 
+     
+    .header .discovery-call__subtitle{
+        font-size: 16px; 
+        line-height: 130%; 
+        margin-bottom: 15px;
+    }  
+     
+    .header__main-certificate-img{ 
+        margin: 26px 0 64px;
+    } 
+     
+    .header__top .menu__list.menu__list--active {
+        top: 72px; 
+    } 
+     
+    .header__top .menu .menu__list {
+        position: absolute;
+        left: 5%;
+        right: 5%; 
+        height: 657px;
+    } 
+     
+    .header__top .menu .menu__list {
+        padding: 45px 0; 
+    }
+     
+}  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+@media(max-width: 320px) {     
+     
+    // header
+     
+    .header .discovery-call__btn {
+        font-size: 14px; 
+    }  
+     
+    .header__top .menu .menu__btn::before {
+        content: "";
+        height: 70px;
+        width: 2px;
+        background-color: #000;
+        position: absolute;
+        top: -28px;
+        right: 45px;
+    }
+     
+}
+     
+    
+     
+   
+
