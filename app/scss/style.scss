@@ -253,12 +253,12 @@
 
 }
 
-.reasons{
+.reasons {
 
     &__inner {
         border: 2px solid #000;
         background-color: #b2ebf2;
-        padding: 50px; 
+        padding: 50px;
         margin-bottom: 30px;
     }
 
@@ -304,15 +304,15 @@
 }
 
 
-.choose-us { 
+.choose-us {
     margin-bottom: 30px;
 
     &__inner {
         padding: 50px;
         background-color: #b2ebf2;
-        border: 2px solid #000; 
-        display: flex; 
-        justify-content: space-between;   
+        border: 2px solid #000;
+        display: flex;
+        justify-content: space-between;
         align-items: flex-end;
     }
 
@@ -329,168 +329,168 @@
 
     &__subtitle {
         margin-bottom: 25px;
-    }  
-     
-    &__items{  
-        border: 1px solid transparent; 
-        display: flex;  
-        flex-wrap: wrap; 
+    }
+
+    &__items {
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
         max-width: 570px;
     }
-     
-    &__item{ 
-        padding: 10px 23px; 
-        background-color: #FFF; 
-        border-radius: 140px; 
-        width:fit-content;  
-        border: 2px solid #000;  
-        box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.75); 
+
+    &__item {
+        padding: 10px 23px;
+        background-color: #FFF;
+        border-radius: 140px;
+        width: fit-content;
+        border: 2px solid #000;
+        box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.75);
         margin: 5px;
-    } 
-     
-    &__item-text{ 
-        @extend %montserrat-500; 
-        font-size: 16px; 
+    }
+
+    &__item-text {
+        @extend %montserrat-500;
+        font-size: 16px;
         line-height: 140%;
-    } 
-     
-    &__founder{  
+    }
+
+    &__founder {
         width: 100%;
-        max-width: 480px; 
-        height: 240px; 
-        border: 2px solid #000;   
-        background-color: #FFF;  
-        border-radius: 20px; 
-        padding: 15px; 
-        position: relative; 
-    }   
-     
-    &__founder-img{ 
+        max-width: 480px;
+        height: 240px;
+        border: 2px solid #000;
+        background-color: #FFF;
+        border-radius: 20px;
+        padding: 15px;
+        position: relative;
+    }
+
+    &__founder-img {
         position: absolute;
         right: 25px;
         bottom: 0;
     }
-     
-    &__founder-badge{  
-        position: absolute; 
-        bottom:15px; 
-        left: 15px;       
-    }
-     
-   &__founder-name{ 
-     @extend %montserrat-900; 
-     font-size: 14px; 
-     line-height: 130%;
-   }  
-    
-   &__founder-position{ 
-     @extend %montserrat-500; 
-     font-size: 14px; 
-     line-height: 130%;
-   }
-} 
- 
 
-.reviews{ 
+    &__founder-badge {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    &__founder-name {
+        @extend %montserrat-900;
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    &__founder-position {
+        @extend %montserrat-500;
+        font-size: 14px;
+        line-height: 130%;
+    }
+}
+
+
+.reviews {
     margin-bottom: 30px;
-     
-    &__inner{ 
+
+    &__inner {
         padding: 100px 50px 37px 50px;
-       border: 2px solid #000;    
-       background-color: #b2ebf2; 
-    } 
-      
-    &__title{ 
+        border: 2px solid #000;
+        background-color: #b2ebf2;
+    }
+
+    &__title {
         margin-bottom: 20px;
-    }  
-     
-    &__items{  
-        display: grid; 
-        grid-template-rows: repeat(2, 1fr);   
-        grid-template-columns: repeat(3, 1fr);  
+    }
+
+    &__items {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
-     
-    &__item{ 
-      border: 2px solid #000;     
-      border-radius: 20px;     
-      padding: 20px; 
-      max-width: 414px; 
-      background: #fff; 
-    }  
-     
-    &__item-person{ 
-        display: flex; 
-        justify-content: space-between;  
+
+    &__item {
+        border: 2px solid #000;
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 414px;
+        background: #fff;
+    }
+
+    &__item-person {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        width: 100%; 
-        max-width: 309px; 
+        width: 100%;
+        max-width: 309px;
         margin-bottom: 10px;
-    }     
-     
-    &__item.reviews__item--arjun{  
-        height: 301px; 
-    } 
-     
-   &__item.reviews__item--emily{ 
-     height: 259px; 
-   } 
-    
-  &__item.reviews__item--hari{ 
-    height: 280px;
-  } 
-   
-  &__item.reviews__item--laura{ 
-    height: 238px;
-  } 
-   
-  &__item.reviews__item--ravi{ 
-    height: 238px; 
-    margin-top: -20px;
-  } 
-   
-  &__item.reviews__item--priya{  
-    height: 259px; 
-    margin-top: -40px;
-  }
-     
-   &__item-person-data{ 
-     height: 43px; 
-     border: 1px solid transparent; 
-     position: relative; 
-     width: 227px;
-   }
-     
-   &__item-name{ 
-     font-size: 16px; 
-     padding: 0;
-   } 
-    
-   &__item-position{ 
-     @extend %montserrat-500; 
-     font-size: 16px;
-     position: absolute;
-     top: 21px;
-   } 
-    
-  &__item-star{ 
-    margin-bottom: 10px;
-  } 
-   
-  &__item-text{ 
-    @extend %montserrat-500; 
-    font-size: 16px; 
-    max-width: 327px; 
-    line-height: 130%;
-  }
-       
-} 
- 
-.contacts {   
-     margin-bottom: 30px;
-     
-    &__inner{  
-        display: flex; 
+    }
+
+    &__item.reviews__item--arjun {
+        height: 301px;
+    }
+
+    &__item.reviews__item--emily {
+        height: 259px;
+    }
+
+    &__item.reviews__item--hari {
+        height: 280px;
+    }
+
+    &__item.reviews__item--laura {
+        height: 238px;
+    }
+
+    &__item.reviews__item--ravi {
+        height: 238px;
+        margin-top: -20px;
+    }
+
+    &__item.reviews__item--priya {
+        height: 259px;
+        margin-top: -40px;
+    }
+
+    &__item-person-data {
+        height: 43px;
+        border: 1px solid transparent;
+        position: relative;
+        width: 227px;
+    }
+
+    &__item-name {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    &__item-position {
+        @extend %montserrat-500;
+        font-size: 16px;
+        position: absolute;
+        top: 21px;
+    }
+
+    &__item-star {
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        @extend %montserrat-500;
+        font-size: 16px;
+        max-width: 327px;
+        line-height: 130%;
+    }
+
+}
+
+.contacts {
+    margin-bottom: 30px;
+
+    &__inner {
+        display: flex;
         justify-content: space-between;
     }
 
@@ -509,11 +509,11 @@
         &__subtitle {
             max-width: 540px;
             margin-bottom: 20px;
-        } 
-         
-       &__subtitle.discovery-call__subtitle--contacts{ 
-          max-width: 400px;
-       }
+        }
+
+        &__subtitle.discovery-call__subtitle--contacts {
+            max-width: 400px;
+        }
 
         &__form {
             border-radius: 20px;
@@ -557,53 +557,53 @@
             max-width: 529px;
         }
 
-    }  
-     
-    .discovery-call.discovery-call--contacts{ 
-        padding: 45px 50px 38px; 
     }
-     
-    &__picture{ 
-        border: 2px solid #000; 
-        border-left: 1px solid #000; 
-    }
-} 
- 
-.footer{  
 
-    &__inner{ 
-        border: 1px solid #000;        
-        padding: 50px; 
-        background-color:#222222; 
-        display: flex; 
-       justify-content: space-between;
+    .discovery-call.discovery-call--contacts {
+        padding: 45px 50px 38px;
+    }
+
+    &__picture {
+        border: 2px solid #000;
+        border-left: 1px solid #000;
+    }
+}
+
+.footer {
+
+    &__inner {
+        border: 1px solid #000;
+        padding: 50px;
+        background-color: #222222;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-    } 
-     
-    &__copyright{ 
+    }
+
+    &__copyright {
         max-width: 597px;
-        @extend %montserrat-700; 
+        @extend %montserrat-700;
         color: #808080;
-    }  
-     
-   &__social{  
-     width: 100%;
-     max-width: 240px; 
-     display: flex; 
-     justify-content: space-between; 
-     align-items: center;
-   }
-     
-   &__social-link{ 
-     width: 48px; 
-     height: 48px; 
-     border-radius: 50%; 
-     border: 2px solid #808080;  
-     display: block;  
-     display: flex;  
-     justify-content: center; 
-     align-items: center;
-   }
+    }
+
+    &__social {
+        width: 100%;
+        max-width: 240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__social-link {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #808080;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
