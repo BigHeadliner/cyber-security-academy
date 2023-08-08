@@ -567,6 +567,43 @@
         border: 2px solid #000; 
         border-left: 1px solid #000; 
     }
+} 
+ 
+.footer{  
+
+    &__inner{ 
+        border: 1px solid #000;        
+        padding: 50px; 
+        background-color:#222222; 
+        display: flex; 
+       justify-content: space-between;
+        align-items: center;
+    } 
+     
+    &__copyright{ 
+        max-width: 597px;
+        @extend %montserrat-700; 
+        color: #808080;
+    }  
+     
+   &__social{  
+     width: 100%;
+     max-width: 240px; 
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center;
+   }
+     
+   &__social-link{ 
+     width: 48px; 
+     height: 48px; 
+     border-radius: 50%; 
+     border: 2px solid #808080;  
+     display: block;  
+     display: flex;  
+     justify-content: center; 
+     align-items: center;
+   }
 }
 
 
