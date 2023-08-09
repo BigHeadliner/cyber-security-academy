@@ -42,7 +42,28 @@
         left: 21%;
     }  
 
-}  
+}   
+ 
+@media(max-width: 1315px) {    
+     
+    // reviews
+     
+    .reviews__items{ 
+      display: flex;
+      flex-wrap: wrap;  
+      justify-content: center;
+      border: 1px solid transparent;
+    }  
+     
+    .reviews__item.reviews__item--arjun, 
+    .reviews__item.reviews__item--hari, 
+    .reviews__item.reviews__item--emily, 
+    .reviews__item.reviews__item--laura, 
+    .reviews__item.reviews__item--ravi, 
+    .reviews__item.reviews__item--priya{ 
+        margin: 4px;
+    }
+}
  
 @media(max-width: 1284px) {   
      
@@ -68,6 +89,16 @@
      
     .faq__title{ 
         margin: 15px 0;
+    } 
+      
+    // reviews  
+
+    .reviews__inner {
+        padding: 75px 25px 53px 25px; 
+    }  
+     
+    .reviews__title {
+        margin-bottom: 39px;
     }
 
 } 
@@ -352,7 +383,14 @@
     .choose-us__founder-img {
         width: 167px;
         height: 225px;
-    }
+    }  
+     
+    // reviews
+     
+    .reviews__inner {
+        padding: 55px 25px 53px 25px;
+    } 
+
 } 
  
 @media(max-width: 470px) {      
@@ -420,6 +458,22 @@
      
     .reasons__title {
         margin-bottom: 0px;
+    }  
+     
+    // reviews
+     
+    .reviews__item.reviews__item--arjun,  
+    .reviews__item.reviews__item--hari,  
+    .reviews__item.reviews__item--emily, 
+    .reviews__item.reviews__item--laura, 
+    .reviews__item.reviews__item--ravi, 
+    .reviews__item.reviews__item--priya {
+        height: auto;
+    } 
+     
+    .reviews__item-position, 
+    .reviews__item-name{ 
+        line-height: 130%;
     }
 
 } 
@@ -478,6 +532,12 @@
    
   .choose-us__title {
     margin-bottom: 15px; 
+  }  
+   
+ // reviews
+   
+  .reviews__inner{ 
+    padding: 40px 17px;
   }
  
 }  
@@ -524,9 +584,65 @@
     .choose-us__item-text {
         font-size: 14px;  
         line-height: 130%;
+    } 
+     
+    .reviews__item-img{ 
+        margin-right: 8px;
     }
 
-}
+} 
+ 
+@media(max-width: 410px) {     
+     
+    // reviews 
+     
+    .reviews__title {
+        margin-bottom: 25px;
+    }
+     
+    .reviews__items{ 
+        display: block;
+    } 
+     
+     
+    .reviews__item.reviews__item--arjun, 
+    .reviews__item.reviews__item--hari, 
+    .reviews__item.reviews__item--emily, 
+    .reviews__item.reviews__item--laura, 
+    .reviews__item.reviews__item--ravi, 
+    .reviews__item.reviews__item--priya{ 
+        margin: 0 0 15px 0;
+    }  
+     
+    .reviews__item {
+        padding: 15px;
+    }
+     
+ }  
+  
+ @media(max-width: 395px) {   
+     
+    // reviews
+     
+    .reviews__item-person {
+        align-items: flex-start;
+    }
+     
+  }
+  
+ @media(max-width: 385px) {  
+     
+    .reviews__item-name, 
+    .reviews__item-position{ 
+        line-height: 130%;
+    } 
+     
+    .reviews__item-text{ 
+        font-size: 14px; 
+        line-height: 140%;
+    }
+
+ }
  
 @media(max-width: 377px) {
 
@@ -794,7 +910,26 @@
      
     .faq__question-title{ 
         line-height: 130%;
-    }
+    }  
+     
+    // reviews
+     
+    .reviews__inner {
+        padding: 40px 15px 30px;
+    } 
+     
+    .reviews__title {
+        margin-bottom: 20px; 
+    }  
+     
+    .reviews__item.reviews__item--arjun, 
+    .reviews__item.reviews__item--hari, 
+    .reviews__item.reviews__item--emily, 
+    .reviews__item.reviews__item--laura, 
+    .reviews__item.reviews__item--ravi, 
+    .reviews__item.reviews__item--priya{ 
+        margin: 0 0 10px 0;
+    }  
      
 }  
 
