@@ -1,4 +1,21 @@
  
+  
+  @media(max-width:1405px){   
+     
+    // reasons  
+
+  .reasons__items{ 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    border: 1px solid transparent;
+  }  
+   
+  .reasons__item{ 
+    margin: 15px;
+  }
+
+}
+
    
 @media(max-width: 1370px) {
 
@@ -97,6 +114,16 @@
         left: 0;
         right: 0;
         margin: 0 auto;
+    }  
+     
+    // reasons
+     
+    .reasons__inner {
+        padding: 40px; 
+    }  
+     
+    .reasons__title {
+        margin-bottom: 34px; 
     }
   
  } 
@@ -136,6 +163,16 @@
      
     .header__top .menu .menu__btn { 
         display: block;
+    }  
+     
+    // reasons 
+     
+    .reasons__inner {
+        padding: 40px 40px 25px;
+    }
+     
+    .reasons__title {
+        margin-bottom: 23px; 
     }
  }  
    
@@ -232,7 +269,28 @@
         font-size: 19px;
     }
 
-} 
+}  
+  
+@media(max-width: 570px) {     
+     
+    // reasons
+      
+    .reasons__inner {
+        padding: 34px 40px 19px;
+    } 
+     
+    .reasons__title {
+        margin-bottom: 17px; 
+    } 
+     
+    .reasons__items{ 
+        display: block;
+    } 
+      
+    .reasons__item{ 
+        margin: 15px auto;
+    }
+}
 
 @media(max-width: 530px) {     
 
@@ -242,7 +300,21 @@
         font-size: 95px;
         line-height: 97%;
         color: #000;
-    } 
+    }   
+     
+    // reasons
+     
+    .reasons__item{ 
+        padding: 15px;
+    }  
+     
+    .reasons__item-img {
+        margin-bottom: 15px; 
+    }
+     
+    .reasons__item-text {
+        max-width: 350px; 
+    }
 } 
  
 @media(max-width: 470px) {      
@@ -265,6 +337,16 @@
      
     .faq__questions {
         padding: 20px 35px 25px 35px; 
+    }  
+     
+    // reasons
+     
+    .reasons__title {
+        margin-bottom: 7px; 
+    } 
+     
+    .reasons__item-text {
+        font-size: 18px; 
     }
 
 }  
@@ -294,6 +376,12 @@
         margin: 31px 0 83px 0;
         width: 254px; 
         height: 359px;
+    }  
+     
+    // reasons
+     
+    .reasons__title {
+        margin-bottom: 0px;
     }
 
 } 
@@ -349,6 +437,10 @@
      
     .faq__question-title {
         margin-right: 15px; 
+    } 
+     
+    .reasons__inner{ 
+        padding: 30px 15px 15px;
     }
 
 }
@@ -377,6 +469,12 @@
      
     .faq__question-text{ 
         font-size: 14px;
+    }  
+     
+    // reasons
+     
+    .reasons__item-text {
+        font-size: 16px;
     }
 
 } 
@@ -395,6 +493,23 @@
      
     .header__top .menu__list.menu__list--active {
         top: 95px;
+    } 
+     
+    .reasons__inner {
+        padding: 30px 15px 20px;
+    } 
+     
+    .reasons__item{ 
+        margin: 10px auto; 
+    } 
+     
+    .reasons__item-text { 
+        line-height: 130%;
+    } 
+     
+    .reasons__item-img{ 
+        width: 60px; 
+        height: 60px;
     }
      
 
